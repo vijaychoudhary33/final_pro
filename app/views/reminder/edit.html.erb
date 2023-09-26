@@ -1,0 +1,42 @@
+<h1>Modify Reminder</h1>
+
+<%= form_with(model: @reminder, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.datetime_field :date, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subject %>
+    <%= f.text_field :subject, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_area :email, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact_number %>
+    <%= f.text_field :contact_number, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sms_no %>
+    <%= f.text_field :sms_no, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rec_next %>
+    <%= f.text_field :rec_next, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Update', class: 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Welcome to the Reminder Application, Vijaycho</h1>
+<p>Today is <%= Time.now.strftime('%A, %dth Of %B.') %></p>
+
+<ul>
+  <li><%= link_to 'Set Reminder', new_reminder_path %></li>
+  <li><%= link_to 'Modify Reminder', new_reminder_path %></li>
+  <li><%= link_to 'Enable Reminder', new_reminder_path %></li>
+  <li><%= link_to 'Disable Reminder', new_reminder_path %></li>
+  <li><%= link_to 'View are Reminder', new_reminder_path %></li>
+
+ </ul>
+<div>
+<li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
